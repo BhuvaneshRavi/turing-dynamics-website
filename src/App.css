@@ -5,6 +5,11 @@
   font-family: 'PT Sans', sans-serif;
 }
 
+:root{
+  --primary-white : #fff;
+  --primary-orange : #f9ab00;
+}
+
 .home,
 .about,
 .portfolio,
@@ -27,12 +32,14 @@
 }
 
 .portfolio {
-  background-image: url('./Assets/images/img-under-construction-3.jpg');
+  position: relative;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./Assets/images/img-main-info.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #000000;
-  font-size: 50px;
+  height: 90vh;
+  /* color: #000000; */
+  /* font-size: 50px; */
 }
 
 .projects {
@@ -53,17 +60,102 @@
   font-size: 50px;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
   .about {
     font-size: 35px;
   }
-  .portfolio {
-    font-size: 35px;
-  }
+   /* .portfolio {
+    
+  }  */
   .projects {
     font-size: 35px;
   }
   .blogs {
     font-size: 35px;
   }
+
+}
+/*------------------------------Intro Section----------------------------*/
+
+ .intro {
+  display: flex;
+  /* flex-direction: column; */
+  z-index: 2;
+  /* position: absolute; */
+} 
+
+.introLeft{
+  flex: 0.5;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  }
+
+.imgContainer {
+  text-align: center;
+}
+
+.introLeft .imgContainer img{
+  justify-content: center;
+  border-radius: 30%;
+  width: 50%;
+  }  
+
+.introRight{
+    flex: 0.5;
+    padding-top: 10%;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Condesed", sans-serif;
+  }
+
+.introRight h1{
+  text-align: left;
+  color: var(--primary-orange);
+  font-size: 3rem;
+}
+
+.introRight h2{
+  text-align: left;
+  color: var(--primary-orange);
+  font-size: 2rem;
+}
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+.particles-canvas {
+  position: absolute;
+  z-index: 1;
+}
+
+.tsparticles-canvas-el {
+  height: 100vh !important;
+  width: 100vw !important;
+  max-height: 400px !important;
+  max-width: 1200px !important;
+}
+
+@media(max-width:768px){
+  .particles-canvas{
+    display: none;
+  } 
+  .intro{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  } 
+  .introRight h1{
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .introRight h2{
+    text-align: center;
+    font-size: 1rem;
+  }
+
 }
