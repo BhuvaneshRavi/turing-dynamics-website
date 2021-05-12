@@ -127,6 +127,67 @@
   color: var(--primary-white);
 }
 
+.icons {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  padding: 2rem 0;
+}
+
+.icon-holder {
+  margin-right: 2rem;
+}
+
+.icon-fb {
+  font-size: 2.8rem;
+  color: #a8aab1;
+  transition: all .4s ease-in-out;
+}
+
+.icon-fb:hover {
+  color: #0044ff;
+}
+
+.icon-ig {
+  font-size: 2.8rem;
+  color: #a8aab1;
+  transition: all .4s ease-in-out;
+}
+
+.icon-ig:hover {
+  color: rgba(212, 45, 212, 0.788);
+}
+
+.icon-sc {
+  font-size: 2.8rem;
+  color: #a8aab1;
+  transition: all .4s ease-in-out;
+}
+
+.icon-sc:hover {
+  color: rgb(255, 102, 0);
+}
+
+.icon-li {
+  font-size: 2.8rem;
+  color: #a8aab1;
+  transition: all .4s ease-in-out;
+}
+
+.icon-li:hover {
+  color: rgb(0, 173, 253);
+}
+
+.icon-gh {
+  font-size: 2.8rem;
+  color: #a8aab1;
+  transition: all .4s ease-in-out;
+}
+
+.icon-gh:hover {
+  color: rgb(253, 0, 0);
+}
+
 .particles-canvas {
   position: absolute;
   z-index: 1;
